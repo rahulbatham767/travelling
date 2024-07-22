@@ -16,7 +16,7 @@ const FooterSection = () => {
         />
       </div>
       <div className="absolute bottom-1/2-6 items-center justify-center flex flex-col">
-        <h1 className="text-5xl mb-8 text-white">Let's Get To Know</h1>
+        <h1 className="text-5xl mb-8 text-white">Lets Get To Know</h1>
         <button className="btn">
           <a href="tel:750-988-8936">Call Now</a>
         </button>
