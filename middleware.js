@@ -5,14 +5,7 @@ export function middleware(request) {
   const token = request.cookies.get("token");
   const url = new URL(request.url);
 
-  const fullUrl = new URL(request.headers.get("host"));
-
-  // Log the full URL
-  console.log("Full URL:", fullUrl.href);
-
-  console.log(url);
-
-  if (token && (url.pathname === "/login" || url.pathname === "/register")) {
+  if (token && (url.pathname === "/signup" || url.pathname === "/register")) {
     return NextResponse.redirect(new URL("/", request.url));
   }
 
